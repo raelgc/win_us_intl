@@ -1,4 +1,4 @@
-## Win US Intl Keyboard Layout for Ubuntu
+## Win US Intl Keyboard Layout for Linux
 
 Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows(TM) to Linux.
 
@@ -7,7 +7,7 @@ This repo was created to try to provide the same Windows(TM) behavior for latin 
 It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
 
-### Install Instructions
+### Install Instructions (Ubuntu)
 
 1. Download the .XCompose file to your home. Run in terminal:
 
