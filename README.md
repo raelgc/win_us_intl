@@ -1,4 +1,4 @@
-## Win US Intl Keyboard Layout for Linux
+# Win US Intl Compose for Linux
 
 Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows(TM) to Linux.
 
@@ -7,7 +7,9 @@ This repo was created to try to provide the same Windows(TM) behavior for latin 
 It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
 
-### Install Instructions (Ubuntu)
+## Install Instructions 
+
+### Ubuntu
 
 1. Download the .XCompose file to your home. Run in terminal:
 
@@ -34,13 +36,13 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
     open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
     ```
 
-### Known Issues
+## Known Issues
 
 1. Ubuntu Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
 
-### How to Conttribute
+## How to Contribute
 
 If you modify this file to improve the compatibility with the
  original Windows US Intl Behavior, please open an issue in this repo.
