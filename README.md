@@ -36,8 +36,13 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 ### Known Issues
 
-Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
+1. Ubuntu Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
+2. Some obscure key combinations haven't been covered yet (acute + ß).
+3. Some dead key combinations don't work at all (acute + diaeresis != '")
 
-### Credits
+### How to Conttribute
 
-Original version of .XCompose file was taken from http://tamh.info/en/win-us-intl-4-linux. I just changed few entries to make it don't raise some warnings.
+If you modify this file to improve the compatibility with the
+ original Windows US Intl Behavior, please open an issue in this repo.
+ We'll gladly merge both files after determine those changes will
+ match the usual behavior in Windows, giving credit where due
