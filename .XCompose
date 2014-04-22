@@ -2,43 +2,17 @@
 # ~/.XCompose
 #   To change the US International keyboard layout to behave like the
 #   Microsoft Windows (TM) version of the layout
-# version: 0.2 edit 6 (20110403-6)
 # by @tamh [48bytes at gmail com]
 #
-# Released under LGPL v2.1. Please refer to it by going to:
-# <http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
+# Released under GPL v3+. Please refer to it by going to:
+# <http://www.gnu.org/licenses/gpl-3.0.html>
 #-#-#-#
-# QUICK USER GUIDE:
-# 1) Copy this file and both .sh files to your home directory.
-#    * This file's name shouldn't be changed (capitalization should be correct).
-#    * You can merge several .XCompose files by appending those after this one.
-# 2) Run ~/win_us_intl_config.sh (and make sure this command starts before any
-#    graphical program, you're on your own here)
-# *) Enjoy.
-#
-# For convenience, you should make sure the previous command runs before any
-# program in the graphic session.
-#-#-#-#
-# KNOWN ISSUES:
-# - Some obscure key combinations haven't been covered yet (acute + ß).
-# - Some dead key combinations don't work at all (acute + diaeresis != '")
-#-#-#-#
-# Finally, if you modify this file to improve the compatibility with the
-# original Windows US Intl Behavior, please send me your edits to my email
-# address. I will gladly merge both files if I determine those changes will
-# match the usual behavior in Windows, giving credit where due.
-#-#-#-#-#-#-#-#
-#
-# REAL FILE STARTS HERE
-#
 
 # Include the original Compose file to add all the assignments
 include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ### DEAD_ACUTE
 # Fixing dead_acute "´" assignments by overwriting the assignments
-# Edit 3: Added the Portuguese cedilla
-# Edit 5: Added the numbers and behavior of two dead keys
 <dead_acute> <B> : "'B"
 <dead_acute> <b> : "'b"
 <dead_acute> <C> : "Ç" Ccedilla # LATIN CAPITAL LETTER C WITH CEDILLA
@@ -94,8 +68,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_acute> <dead_diaeresis> : "'\""
 <dead_acute> <circumflex> : "'^"
 <dead_acute> <tilde> : "'~"
-
-# Edit 6: Adding the other combinations Windows deems correct.
 <dead_acute> <exclam> : "'!"
 <dead_acute> <exclamdown> : "'¡"
 <dead_acute> <onesuperior> : "'¹"
@@ -150,8 +122,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ### DEAD_DIAERESIS
 # Fixing dead_diaeresis "¨" assignments by overwriting the assignments
-# Edit 4: ý and Ý are valid in Windows, thus removed those entries
-# Edit 5: Added the numbers and behavior of two dead keys
 <dead_diaeresis> <B> : "\"B"
 <dead_diaeresis> <b> : "\"b"
 <dead_diaeresis> <C> : "\"C"
@@ -208,8 +178,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_diaeresis> <dead_grave> : "\"`"
 <dead_diaeresis> <dead_circumflex> : "\"^"
 <dead_diaeresis> <dead_tilde> : "\"~"
-
-# Edit 6: Adding the other combinations Windows deems correct.
 <dead_diaeresis> <exclam> : "\"!"
 <dead_diaeresis> <exclamdown> : "\"¡"
 <dead_diaeresis> <onesuperior> : "\"¹"
@@ -264,7 +232,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ### DEAD_GRAVE
 # Fixing dead_grave "`" assignments by overwriting the assignments
-# Edit 5: Added the numbers and behavior of two dead keys
 <dead_grave> <B> : "`B"
 <dead_grave> <b> : "`b"
 <dead_grave> <C> : "`C"
@@ -322,8 +289,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_grave> <dead_diaeresis> : "`\""
 <dead_grave> <dead_circumflex> : "`^"
 <dead_grave> <dead_tilde> : "`~"
-
-# Edit 6: Adding the other combinations Windows deems correct.
 <dead_grave> <exclam> : "`!"
 <dead_grave> <exclamdown> : "`¡"
 <dead_grave> <onesuperior> : "`¹"
@@ -378,7 +343,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ### DEAD_CIRCUMFLEX
 # Fixing dead_circumflex "^" assignments by overwriting the assignments
-# Edit 5: Added the numbers and behavior of two dead keys
 <dead_circumflex> <B> : "^B"
 <dead_circumflex> <b> : "^b"
 <dead_circumflex> <C> : "^C"
@@ -436,8 +400,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_circumflex> <dead_grave> : "^`"
 <dead_circumflex> <dead_diaeresis> : "^\""
 <dead_circumflex> <dead_tilde> : "^~"
-
-# Edit 6: Adding the other combinations Windows deems correct.
 <dead_circumflex> <exclam> : "^!"
 <dead_circumflex> <exclamdown> : "^¡"
 <dead_circumflex> <onesuperior> : "^¹"
@@ -492,8 +454,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ### DEAD_TILDE
 # Fixing dead_tilde "~" assignments by overwriting the assignments
-# Edit 4: tilde e, i and u are invalid in Windows. Removed those entries.
-# Edit 5: Added the numbers and when two dead keys are pressed one after other.
 <dead_tilde> <B> : "~B"
 <dead_tilde> <b> : "~b"
 <dead_tilde> <C> : "~C"
@@ -555,8 +515,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_tilde> <dead_grave> : "~`"
 <dead_tilde> <dead_diaeresis> : "~\""
 <dead_tilde> <dead_circumflex> : "~^"
-
-# Edit 6: Adding the other combinations Windows deems correct.
 <dead_tilde> <exclam> : "~!"
 <dead_tilde> <exclamdown> : "~¡"
 <dead_tilde> <onesuperior> : "~¹"
@@ -609,5 +567,4 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_tilde> <question> : "~?"
 <dead_tilde> <questiondown> : "~¿"
 
-# REAL FILE ENDS HERE
 
