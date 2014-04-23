@@ -15,6 +15,7 @@ Open a terminal and run at home folder:
 
 ```term
 wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 sudo yum -y install uim uim-gtk3
 imsettings-switch -q uim
 ```
