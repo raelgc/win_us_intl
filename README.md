@@ -9,7 +9,6 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 ## Install Instructions 
 
-### Ubuntu/Debian
 
 1. Download the .XCompose file to your home. Run in terminal:
 
@@ -17,21 +16,19 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 2. Install [`uim`](http://en.wikipedia.org/wiki/Uim) to enable .XCompose compatibility:
 
-    `sudo apt-get install uim`
+    **Ubuntu**:`sudo apt-get install uim && sudo im-config -n uim`  
+    **openSUSE**: `sudo zypper in uim`
 
-3. Make `uim` the default Input Method for user under X Window System:
+3. Logout and login (or restart all programs you were using).
 
-    `im-config -n uim`
-
-4. Logout and login (or restart all programs you were using).
-
-5. To test it, run in terminal:
+4. To test it, run in terminal:
 
     `$ strace -e open xterm |& grep Compose`
     
     Output will be like:
 
     ```term    
+    open("/home/rael/.XCompose", O_RDONLY)  = 6
     open("/home/rael/.XCompose", O_RDONLY)  = 6
     open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
     ```
