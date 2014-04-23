@@ -19,7 +19,7 @@ gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 sudo yum -y install uim uim-gtk3
 imsettings-switch -q uim
 ```
-Logout and login (or restart all programs you were using)
+Logout and login (or restart all programs you were using).
 
 ### openSUSE
 
@@ -29,7 +29,7 @@ Open a terminal and run at home folder:
 wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo zypper in uim
 ```
-Logout and login (or restart all programs you were using)
+Logout and login (or restart all programs you were using).
 
 ### Ubuntu
 
@@ -40,6 +40,8 @@ wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo apt-get -y install uim
 im-config -n uim
 ```
+Logout and login (or restart all programs you were using).
+
 ## Test
 
 To test it, run in terminal:
