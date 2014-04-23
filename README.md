@@ -31,7 +31,7 @@ sudo zypper in uim
 ```
 Logout and login (or restart all programs you were using).
 
-### Ubuntu
+### Ubuntu / Debian
 
 Open a terminal and run at home folder:
 
