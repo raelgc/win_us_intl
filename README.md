@@ -9,7 +9,7 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 ## Install Instructions 
 
-### Ubuntu
+### Ubuntu/Debian
 
 1. Download the .XCompose file to your home. Run in terminal:
 
