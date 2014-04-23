@@ -7,38 +7,61 @@ This repo was created to try to provide the same Windows(TM) behavior for latin 
 It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
 
-## Install Instructions 
+## Install Instructions
 
+### Fedora 20
 
-1. Download the .XCompose file to your home. Run in terminal:
+Open a terminal and run at home folder:
 
-    `wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose`
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+sudo yum -y install uim uim-gtk3
+imsettings-switch -q uim
+```
+Logout and login (or restart all programs you were using)
 
-2. Install [`uim`](http://en.wikipedia.org/wiki/Uim) to enable .XCompose compatibility:
+### openSUSE
 
-    **Ubuntu**: `sudo apt-get -y install uim && im-config -n uim`  
-    **openSUSE**: `sudo zypper in uim`  
-    **Fedora 20**: `sudo yum -y install uim uim-gtk3 && imsettings-switch -q uim`
+Open a terminal and run at home folder:
 
-3. Logout and login (or restart all programs you were using).
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+sudo zypper in uim
+```
+Logout and login (or restart all programs you were using)
 
-4. To test it, run in terminal:
+### Ubuntu
 
-    `$ strace -e open xterm |& grep Compose`
+Open a terminal and run at home folder:
+
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+sudo apt-get -y install uim
+im-config -n uim
+```
+## Test
+
+To test it, run in terminal:
+
+`$ strace -e open xterm |& grep Compose`
     
-    Output will be like:
+Output will be like:
 
-    ```term    
-    open("/home/rael/.XCompose", O_RDONLY)  = 6
-    open("/home/rael/.XCompose", O_RDONLY)  = 6
-    open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
-    ```
+```term    
+open("/home/rael/.XCompose", O_RDONLY)  = 6
+open("/home/rael/.XCompose", O_RDONLY)  = 6
+open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
+```
+    
+For Fedora 20, no output will be generated.
+
 
 ## Known Issues
 
 1. Ubuntu Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
+
 
 ## How to Contribute
 
