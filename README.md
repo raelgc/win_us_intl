@@ -16,7 +16,7 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 2. Install [`uim`](http://en.wikipedia.org/wiki/Uim) to enable .XCompose compatibility:
 
-    **Ubuntu**:`sudo apt-get install uim && im-config -n uim`  
+    **Ubuntu**:`sudo apt-get -y install uim && im-config -n uim`  
     **openSUSE**: `sudo zypper in uim`
 
 3. Logout and login (or restart all programs you were using).
