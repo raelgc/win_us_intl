@@ -7,9 +7,35 @@ This repo was created to try to provide the same Windows(TM) behavior for latin 
 It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
 
-## Install Instructions
+# Install Instructions
 
-### Fedora 20
+## Ubuntu / Debian
+
+### Binary Package
+
+This `deb` package has a better approach then the manual installations: it creates a global Compose file, available to all users.
+
+To install, open a terminal and run:
+
+```term
+sudo apt-get -y install uim
+wget https://github.com/raelgc/win_us_intl/blob/master/deb/bin/win-us-intl_20140423-1_all.deb
+sudo dpkg -i win-us-intl_20140423-1_all.deb
+```
+### Manual Install
+
+If you don't want install the .deb package, you can still configure your user to use the `.XCompose` file.
+
+Open a terminal and run at home folder:
+
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+sudo apt-get -y install uim
+im-config -n uim
+```
+Logout and login (or restart all programs you were using).
+
+## Fedora 20
 
 Open a terminal and run at home folder:
 
@@ -21,7 +47,7 @@ imsettings-switch -q uim
 ```
 Logout and login (or restart all programs you were using).
 
-### openSUSE
+## openSUSE
 
 Open a terminal and run at home folder:
 
@@ -31,18 +57,7 @@ sudo zypper in uim
 ```
 Logout and login (or restart all programs you were using).
 
-### Ubuntu / Debian
-
-Open a terminal and run at home folder:
-
-```term
-wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
-sudo apt-get -y install uim
-im-config -n uim
-```
-Logout and login (or restart all programs you were using).
-
-## Test
+# Test
 
 To test it, run in terminal:
 
@@ -59,14 +74,14 @@ open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
 For Fedora 20, no output will be generated.
 
 
-## Known Issues
+# Known Issues
 
 1. Ubuntu Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
 
 
-## How to Contribute
+# How to Contribute
 
 If you modify this file to improve the compatibility with the
  original Windows US Intl Behavior, please open an issue in this repo.
