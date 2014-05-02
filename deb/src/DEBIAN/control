@@ -1,0 +1,13 @@
+Package: win-us-intl
+Version: 20140423-1
+Architecture: all
+Maintainer: Rael Gugelmin Cunha <rael@rael-pc.com>
+Installed-Size: 57
+Depends: im-config, libx11-data, uim
+Section: x11
+Priority: optional
+Homepage: https://github.com/raelgc/win_us_intl
+Description: Win US Intl Keyboard Layout for Ubuntu
+ Latin speakers (spanish, brazilian-portuguese) using a US International
+ keyboard layout faces a different behavior from Windows(TM) to Linux.
+ This package tries to mimick the Windows(TM) en_US international behavior.
