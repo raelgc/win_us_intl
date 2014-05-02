@@ -19,7 +19,7 @@ To install, open a terminal and run:
 
 ```term
 sudo apt-get -y install uim
-wget https://github.com/raelgc/win_us_intl/blob/master/deb/bin/win-us-intl_20140423-1_all.deb
+wget https://github.com/raelgc/win_us_intl/raw/master/deb/bin/win-us-intl_20140423-1_all.deb
 sudo dpkg -i win-us-intl_20140423-1_all.deb
 ```
 Logout and login (or restart all programs you were using).
