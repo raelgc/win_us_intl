@@ -9,6 +9,10 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 # Install Instructions
 
+* [Ubuntu/Debian](#ubuntu--debian)  
+* [Fedora 20](#fedora-20)  
+* [openSUSE](#opensuse)
+
 ## Ubuntu / Debian
 
 ### Binary Package
