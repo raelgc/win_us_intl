@@ -63,22 +63,6 @@ sudo zypper in uim
 ```
 Logout and login (or restart all programs you were using).
 
-# Test
-
-To test it, run in terminal:
-
-`$ strace -e open xterm |& grep Compose`
-    
-Output will be like:
-
-```term    
-open("/home/rael/.XCompose", O_RDONLY)  = 6
-open("/home/rael/.XCompose", O_RDONLY)  = 6
-open("/usr/share/X11/locale/en_US.UTF-8/Compose", O_RDONLY) = 7
-```
-    
-For Fedora 20, no output will be generated.
-
 
 # Known Issues
 
