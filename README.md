@@ -15,23 +15,6 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 ## Ubuntu / Debian
 
-### Binary Package
-
-This `deb` package has a better approach then the manual installations: it creates a global Compose file, available to all users.
-
-To install, open a terminal and run:
-
-```term
-sudo apt-get -y install uim
-wget https://github.com/raelgc/win_us_intl/raw/master/deb/bin/win-us-intl_20140423-1_all.deb
-sudo dpkg -i win-us-intl_20140423-1_all.deb
-```
-Logout and login (or restart all programs you were using).
-
-### Manual Install
-
-If you don't want install the .deb package, you can still configure your user to use the `.XCompose` file.
-
 Open a terminal and run at home folder:
 
 ```term
