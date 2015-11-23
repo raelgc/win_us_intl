@@ -1,4 +1,4 @@
-# Win US Intl Compose for Linux
+# Windows(TM) US International XCompose for Linux
 
 Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows(TM) to Linux.
 
