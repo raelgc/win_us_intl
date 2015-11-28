@@ -1,8 +1,8 @@
 # Windows™ US International XCompose for Linux
 
-Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows(TM) to Linux.
+Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows™ to Linux.
 
-This repo was created to try to provide the same Windows(TM) behavior for latin speakers using an `en_US` keyboard layout.
+This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
 
 It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
