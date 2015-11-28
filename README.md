@@ -28,7 +28,7 @@ sudo dpkg -i win-us-intl_20140423-1_all.deb
 im-config -n uim
 ```
 
-Logout and login (or restart all programs you were using).
+Logout and login.
 
 ### Manual Install
 
@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo apt-get -y install uim
 im-config -n uim
 ```
-Logout and login (or restart all programs you were using).
+Logout and login.
 
 ## Fedora 20
 
@@ -51,7 +51,7 @@ gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 sudo yum -y install uim uim-gtk3
 imsettings-switch -q uim
 ```
-Logout and login (or restart all programs you were using).
+Logout and login.
 
 ## openSUSE
 
@@ -61,7 +61,7 @@ Open a terminal and run at home folder:
 wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo zypper in uim
 ```
-Logout and login (or restart all programs you were using).
+Logout and login.
 
 
 # Known Issues
