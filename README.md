@@ -15,7 +15,7 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 
 ## Ubuntu / Debian
 
-### Binary Package
+### Binary Package (Unity and Ubuntu GTK environments)
 
 This deb package has a better approach then the manual installations: it creates a global Compose file, available to all users.
 
@@ -30,7 +30,7 @@ im-config -n uim
 
 Logout and login.
 
-### Manual Install
+## Manual Install (KDE and other QT environments)
 
 Open a terminal and run at home folder:
 
