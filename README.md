@@ -22,7 +22,7 @@ This deb package has a better approach then the manual installations: it creates
 To install, open a terminal and run:
 
 ```term
-sudo apt add-repository -y ppa:rael-gc/utils
+sudo apt-add-repository -y ppa:rael-gc/utils
 sudo apt update
 sudo apt install win-us-intl
 im-config -n uim
