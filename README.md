@@ -70,10 +70,22 @@ Logout and login.
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
 
+# FAQ
+
+## 1. It's not working for me
+
+Make sure your keyboard is using `English (US, intl., with dead keys)` as layout.
+Make sure you logged out before testing.
+In case of issues with `Qt` environments, try define global variables like described in [uim/Setup](https://en.wikibooks.org/wiki/Uim/Setup) page.
+
+## 2. Uim is displaying a toolbar
+
+New versions of `uim` are displaying a float toolbar, which can be removed. Open `uim-pref-gtk` (or `uim-pref-qt`) and in **Toolbar** section change `Display` value to `Never`.
+
+## 3. Double quotes are not working if I press <kbd>' + Shift + Space</kbd>
+
+New versions of `uim` have Global Bindings using <kbd>Space</kbd> and <kbd>Shift</kbd> as accelerators. Open `uim-pref-gtk` (or `uim-pref-qt`) and at the **Global Key Bindings 1** and **Global Key Bindings 2** section edit all shortcuts, removing the assigned keys.
 
 # How to Contribute
 
-If you modify this file to improve the compatibility with the
- original Windows US Intl Behavior, please open an issue in this repo.
- We'll gladly merge both files after determine those changes will
- match the usual behavior in Windows, giving credit where due
+If you modify this file to improve the compatibility with the  original Windows US Intl Behavior, please open an issue in this repo. We'll gladly merge both files after determine those changes will match the usual behavior in Windows, giving credit where due.
