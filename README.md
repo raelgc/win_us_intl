@@ -1,5 +1,7 @@
 # Windows™ US International XCompose for Linux
 
+![Keyboard](keyboard.jpg)
+
 Latin speakers (spanish, brazilian-portuguese) using a US International keyboard layout faces a different behavior from Windows™ to Linux.
 
 This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
