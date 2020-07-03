@@ -72,7 +72,7 @@ Logout and login.
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
 
-# FAQ
+# Troubleshooting
 
 ## 1. It's not working for me
 
@@ -88,6 +88,15 @@ New versions of `uim` are displaying a float toolbar, which can be removed. Open
 
 New versions of `uim` have Global Bindings using <kbd>Space</kbd> and <kbd>Shift</kbd> as accelerators. Open `uim-pref-gtk` (or `uim-pref-qt`) and at the **Global Key Bindings 1** and **Global Key Bindings 2** section edit all shortcuts, removing the assigned keys.
 
+## 4. It doesn't work with an application
+
+Please, take a look in the [Uim Troubleshooting guide](https://en.wikibooks.org/wiki/Uim/Troubleshooting), specifically in the "**Uim doesn't work with an application**" section.
+
+If the Qt or GTK immodule causes application crashes or it doesn't work, try to force uim to use XIM in the application: 
+
+    QT_IM_MODULE=xim opera # force uim to use XIM in Opera
+
+
 # How to Contribute
 
-If you modify this file to improve the compatibility with the  original Windows US Intl Behavior, please open an issue in this repo. We'll gladly merge both files after determine those changes will match the usual behavior in Windows, giving credit where due.
+If you modify this file to improve the compatibility with the original Windows US Intl Behavior, please open an issue in this repo. We'll gladly merge both files after determine those changes will match the usual behavior in Windows, giving credit where due.
