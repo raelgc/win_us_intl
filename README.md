@@ -12,7 +12,8 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 # Install Instructions
 
 * [Ubuntu/Debian](#ubuntu--debian)  
-* [Fedora 20](#fedora-20)  
+* [Fedora 20 to 26](#fedora-20-to-26) 
+* [Fedora 27 and later](#fedora-27-and-later)  
 * [openSUSE](#opensuse)
 
 ## Ubuntu / Debian
@@ -43,7 +44,7 @@ im-config -n uim
 ```
 Logout and login. If that doesn't work, try rebooting the system.
 
-## Fedora 20
+## Fedora 20 to 26
 
 Open a terminal and run at home folder:
 
@@ -53,6 +54,18 @@ gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 sudo yum -y install uim uim-gtk3
 imsettings-switch -q uim
 ```
+
+Logout and login. If that doesn't work, try rebooting the system.
+
+## Fedora 27 and later
+
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules '["'keyboard'"]'
+sudo yum -y install uim uim-gtk3
+imsettings-switch -q uim
+```
+
 Logout and login. If that doesn't work, try rebooting the system.
 
 ## openSUSE
