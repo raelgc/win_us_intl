@@ -12,7 +12,8 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 # Install Instructions
 
 * [Ubuntu/Debian](#ubuntu--debian)  
-* [Fedora 20](#fedora-20)  
+* [Fedora 20 to 26](#fedora-20-to-26) 
+* [Fedora 27 and later](#fedora-27-and-later)  
 * [openSUSE](#opensuse)
 
 ## Ubuntu / Debian
@@ -30,7 +31,7 @@ sudo apt install win-us-intl
 im-config -n uim
 ```
 
-Logout and login.
+Logout and login. If that doesn't work, try rebooting the system.
 
 ## Manual Install (KDE and other QT environments)
 
@@ -41,9 +42,9 @@ wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo apt-get -y install uim
 im-config -n uim
 ```
-Logout and login.
+Logout and login. If that doesn't work, try rebooting the system.
 
-## Fedora 20
+## Fedora 20 to 26
 
 Open a terminal and run at home folder:
 
@@ -53,7 +54,19 @@ gsettings set org.gnome.settings-daemon.plugins.keyboard active false
 sudo yum -y install uim uim-gtk3
 imsettings-switch -q uim
 ```
-Logout and login.
+
+Logout and login. If that doesn't work, try rebooting the system.
+
+## Fedora 27 and later
+
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules '["'keyboard'"]'
+sudo yum -y install uim uim-gtk3
+imsettings-switch -q uim
+```
+
+Logout and login. If that doesn't work, try rebooting the system.
 
 ## openSUSE
 
@@ -63,7 +76,7 @@ Open a terminal and run at home folder:
 wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo zypper in uim
 ```
-Logout and login.
+Logout and login. If that doesn't work, try rebooting the system.
 
 
 # Known Issues
@@ -78,6 +91,7 @@ Logout and login.
 
 Make sure your keyboard is using `English (US, intl., with dead keys)` as layout.
 Make sure you logged out before testing.
+Make sure you rebooted your computer if logging out didn't work.
 In case of issues with `Qt` environments, try define global variables like described in [uim/Setup](https://en.wikibooks.org/wiki/Uim/Setup) page.
 
 ## 2. Uim is displaying a toolbar
@@ -99,4 +113,4 @@ If the Qt or GTK immodule causes application crashes or it doesn't work, try to 
 
 # How to Contribute
 
-If you modify this file to improve the compatibility with the original Windows US Intl Behavior, please open an issue in this repo. We'll gladly merge both files after determine those changes will match the usual behavior in Windows, giving credit where due.
+If you modify this file to improve the compatibility with the original Windows US Intl Behavior, please open an issue in this repo. We'll gladly merge both files after determining those changes will match the usual behavior in Windows, giving credit where due.
