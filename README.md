@@ -28,6 +28,7 @@ To install, open a terminal and run:
 sudo apt-add-repository -y ppa:rael-gc/utils
 sudo apt update
 sudo apt install win-us-intl
+gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules '["'keyboard'"]'
 im-config -n uim
 ```
 
