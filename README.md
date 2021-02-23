@@ -15,6 +15,7 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 * [Fedora 20 to 26](#fedora-20-to-26) 
 * [Fedora 27 and later](#fedora-27-and-later)  
 * [openSUSE](#opensuse)
+* [Arch Linux](#arch-linux-(with-gnome))
 
 ## Ubuntu / Debian
 
@@ -77,6 +78,25 @@ Open a terminal and run at home folder:
 wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo zypper in uim
 ```
+Logout and login. If that doesn't work, try rebooting the system.
+
+## Arch Linux (with GNOME)
+
+Open a terminal and run at home folder:
+```term
+wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
+gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules '["'keyboard'"]'
+sudo pacman -S uim
+```
+
+Include these lines on file `~/.xprofile`:
+```shell
+export GTK_IM_MODULE=uim
+export QT_IM_MODULE=uim
+uim-xim &
+export XMODIFIERS=@im=uim
+```
+
 Logout and login. If that doesn't work, try rebooting the system.
 
 
