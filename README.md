@@ -15,7 +15,7 @@ It relies on use of [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, w
 * [Fedora 20 to 26](#fedora-20-to-26) 
 * [Fedora 27 and later](#fedora-27-and-later)  
 * [openSUSE](#opensuse)
-* [Arch Linux](#arch-linux-(with-gnome))
+* [Arch Linux](#arch-linux-with-gnome)
 
 ## Ubuntu / Debian
 
