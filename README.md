@@ -6,6 +6,12 @@ Latin speakers (spanish, brazilian-portuguese) using a US International keyboard
 
 This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
 
+# Try enabling ISO-8859-1
+
+Run `sudo dpkg-reconfigure locales` and aside the default checked locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
+
+Reboot.
+
 # Try with ibus
 
 Modern versions of `ibus` appears to properly handle the `.XCompose` file.
