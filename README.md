@@ -8,19 +8,26 @@ This repo was created to try to provide the same Windows™ behavior for latin s
 
 # Alternative 1: Try enabling ISO-8859-1
 
-Run `sudo dpkg-reconfigure locales` and aside the default checked locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
+Aside the default enabled locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
+
+In Ubuntu, you can do that running `sudo dpkg-reconfigure locales`. For other distros, fill free to contribute and tell us the related command.
 
 Reboot.
+
+It works fine, but sometimes I have weird side effects in Xorg, like Firefox deleting the first accent on Whatsapp web (it appears to be fine on Wayland).
 
 # Alternative 2: Try with ibus
 
 Modern versions of `ibus` appears to properly handle the `.XCompose` file.
+
 So, download the file and place it at your home folder (and logout/login) should be enough to get proper latin accents:
 
     cd ~
     wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 
 Logout and login again.
+
+It works fine, but I still have the same weird side effect of Firefox deleting first accent on Whatsapp web under Xorg (no issues in Wayland).
 
 # Alternative 3: UIM
 
@@ -29,7 +36,6 @@ If `ibus` is not working for you, you can rely on [`uim`](http://en.wikipedia.or
 ## UIM Proposed Solutions
 
 * [Ubuntu/Debian](#ubuntu--debian)  
-* [Fedora 20 to 26](#fedora-20-to-26) 
 * [Fedora 27 and later](#fedora-27-and-later)  
 * [openSUSE](#opensuse)
 * [Arch Linux](#arch-linux-with-gnome)
