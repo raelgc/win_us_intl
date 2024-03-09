@@ -6,13 +6,13 @@ Latin speakers (spanish, brazilian-portuguese) using a US International keyboard
 
 This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
 
-# Try enabling ISO-8859-1
+# Alternative 1: Try enabling ISO-8859-1
 
 Run `sudo dpkg-reconfigure locales` and aside the default checked locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
 
 Reboot.
 
-# Try with ibus
+# Alternative 2: Try with ibus
 
 Modern versions of `ibus` appears to properly handle the `.XCompose` file.
 So, download the file and place it at your home folder (and logout/login) should be enough to get proper latin accents:
@@ -22,7 +22,7 @@ So, download the file and place it at your home folder (and logout/login) should
 
 Logout and login again.
 
-# UIM
+# Alternative 3: UIM
 
 If `ibus` is not working for you, you can rely on [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
@@ -61,19 +61,6 @@ wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
 sudo apt-get -y install uim
 im-config -n uim
 ```
-Logout and login. If that doesn't work, try rebooting the system.
-
-## Fedora 20 to 26
-
-Open a terminal and run at home folder:
-
-```term
-wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
-gsettings set org.gnome.settings-daemon.plugins.keyboard active false
-sudo yum -y install uim uim-gtk3
-imsettings-switch -q uim
-```
-
 Logout and login. If that doesn't work, try rebooting the system.
 
 ## Fedora 27 and later
@@ -122,6 +109,12 @@ Logout and login. If that doesn't work, try rebooting the system.
 1. Ubuntu Unity Dash don't respect the cedilla. Any other programs will work fine (Firefox, Google Chrome, Gnome programs, KDE programs, etc).
 2. Some obscure key combinations haven't been covered yet (acute + ß).
 3. Some dead key combinations don't work at all (acute + diaeresis != '")
+
+# Uninstall
+
+1. Check the command according your distribution and revert to `ibus`.
+2. Then clear the `dconf` entry according your distro, by example in Ubuntu run: `gsettings set org.gnome.settings-daemon.plugins.xsettings disabled-gtk-modules '[]'`
+
 
 # Troubleshooting
 
