@@ -14,7 +14,7 @@ In Ubuntu, you can do that running `sudo dpkg-reconfigure locales`. For other di
 
 Reboot.
 
-It works fine, but sometimes I have weird side effects in Xorg, like Firefox deleting the first accent on Whatsapp web (it appears to be fine on Wayland).
+It works fine, but I have one weird side effects in Xorg, like Firefox deleting the first accent on Whatsapp web (it appears to be fine on Wayland).
 
 # Alternative 2: Try with ibus
 
