@@ -10,7 +10,11 @@ This repo was created to try to provide the same Windows™ behavior for latin s
 
 Aside the default enabled locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
 
-In Ubuntu, you can do that running `sudo dpkg-reconfigure locales`. For other distros, feel free to contribute and tell us the related command.
+In Ubuntu, you can do that running `sudo dpkg-reconfigure locales`.
+
+If `en_US ISO-8859-1` is not present, generate it with:
+
+    sudo locale-gen en_US
 
 Reboot.
 
