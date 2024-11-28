@@ -6,19 +6,14 @@ Latin speakers (spanish, brazilian-portuguese) using a US International keyboard
 
 This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
 
-# Alternative 1: Try enabling ISO-8859-1
+# Alternative 1: Enable cedilla
 
-Aside the default enabled locale `en_US.UTF-8`, additionally enable `en_US ISO-8859-1`.
+As `sudo`, create a file at `/etc/environments.d/90cedilla.conf` and add this:
 
-In Ubuntu, you can do that running `sudo dpkg-reconfigure locales`.
-
-If `en_US ISO-8859-1` is not present, generate it with:
-
-    sudo locale-gen en_US
+    export GTK_IM_MODULE=cedilla
+    export QT_IM_MODULE=cedilla
 
 Reboot.
-
-It works fine, but I have one weird side effects in Xorg, like Firefox deleting the first accent on Whatsapp web (it appears to be fine on Wayland).
 
 # Alternative 2: Try with ibus
 
