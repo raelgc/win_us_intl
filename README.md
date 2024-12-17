@@ -6,20 +6,14 @@ Latin speakers (spanish, brazilian-portuguese) using a US International keyboard
 
 This repo was created to try to provide the same Windows™ behavior for latin speakers using an `en_US` keyboard layout.
 
-# Alternative 1: Enable cedilla
+# Alternative 1: Enable cedilla + XCompose
 
 As `sudo`, create a file at `/etc/environments.d/90cedilla.conf` and add this:
 
     export GTK_IM_MODULE=cedilla
     export QT_IM_MODULE=cedilla
 
-Reboot.
-
-# Alternative 2: Try with ibus
-
-Modern versions of `ibus` appears to properly handle the `.XCompose` file.
-
-So, download the file and place it at your home folder (and logout/login) should be enough to get proper latin accents:
+Download the `XCompose` file and place it at your home folder (and logout/login) should be enough to get proper latin accents:
 
     cd ~
     wget https://raw.githubusercontent.com/raelgc/win_us_intl/master/.XCompose
@@ -28,7 +22,7 @@ Logout and login again.
 
 It works fine, but I still have the same weird side effect of Firefox deleting first accent on Whatsapp web under Xorg (no issues in Wayland).
 
-# Alternative 3: UIM
+# Alternative 2: UIM
 
 If `ibus` is not working for you, you can rely on [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
