@@ -119,6 +119,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_acute> <slash> : "'/"
 <dead_acute> <question> : "'?"
 <dead_acute> <questiondown> : "'¿"
+<dead_acute> <space> : "'"
 
 ### DEAD_DIAERESIS
 # Fixing dead_diaeresis "¨" assignments by overwriting the assignments
@@ -229,6 +230,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_diaeresis> <slash> : "\"/"
 <dead_diaeresis> <question> : "\"?"
 <dead_diaeresis> <questiondown> : "\"¿"
+<dead_diaeresis> <space> : "\""
 
 ### DEAD_GRAVE
 # Fixing dead_grave "`" assignments by overwriting the assignments
@@ -340,6 +342,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_grave> <slash> : "`/"
 <dead_grave> <question> : "`?"
 <dead_grave> <questiondown> : "`¿"
+<dead_grave> <space> : "`"
 
 ### DEAD_CIRCUMFLEX
 # Fixing dead_circumflex "^" assignments by overwriting the assignments
@@ -451,6 +454,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_circumflex> <slash> : "^/"
 <dead_circumflex> <question> : "^?"
 <dead_circumflex> <questiondown> : "^¿"
+<dead_circumflex> <space> : "^"
 
 ### DEAD_TILDE
 # Fixing dead_tilde "~" assignments by overwriting the assignments
@@ -566,5 +570,6 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_tilde> <slash> : "~/"
 <dead_tilde> <question> : "~?"
 <dead_tilde> <questiondown> : "~¿"
+<dead_tilde> <space> : "~"
 
 
