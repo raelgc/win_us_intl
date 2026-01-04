@@ -22,14 +22,18 @@ Logout and login again.
 
 It works fine, but I still have the same weird side effect of Firefox deleting first accent on Whatsapp web under Xorg (no issues in Wayland).
 
+## Fedora 43 KDE
+
+Fedora 43 KDE users need to install `fcitx5`. You will receive a warning that setting `GTK_IM_MODULE` is not recommended with Wayland Input method frontend, but so far this seems to be the best working solution for Fedora KDE.
+
 # Alternative 2: UIM
 
 If `ibus` is not working for you, you can rely on [`uim`](http://en.wikipedia.org/wiki/Uim) as Input Method, which supports both GTK+ and Qt immodules with legacy [`XIM`](http://en.wikipedia.org/wiki/Xim) support.
 
 ## UIM Proposed Solutions
 
-* [Ubuntu/Debian](#ubuntu--debian)  
-* [Fedora 27 and later](#fedora-27-and-later)  
+* [Ubuntu/Debian](#ubuntu--debian)
+* [Fedora 27 and later](#fedora-27-and-later)
 * [openSUSE](#opensuse)
 * [Arch Linux](#arch-linux-with-gnome)
 
@@ -136,7 +140,7 @@ New versions of `uim` have Global Bindings using <kbd>Space</kbd> and <kbd>Shift
 
 Please, take a look in the [Uim Troubleshooting guide](https://en.wikibooks.org/wiki/Uim/Troubleshooting), specifically in the "**Uim doesn't work with an application**" section.
 
-If the Qt or GTK immodule causes application crashes or it doesn't work, try to force uim to use XIM in the application: 
+If the Qt or GTK immodule causes application crashes or it doesn't work, try to force uim to use XIM in the application:
 
     QT_IM_MODULE=xim opera # force uim to use XIM in Opera
 
